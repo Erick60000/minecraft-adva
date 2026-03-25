@@ -1,0 +1,21 @@
+:root {
+    /* --- COLORES PRINCIPALES --- */
+    --bg-dark: #080808;         /* Fondo casi negro */
+    --bg-card: #121212;         /* Color de las tarjetas */
+    --main-color: #00ff88;      /* Verde Neón (Minecraft/Matrix) */
+    --main-glow: rgba(0, 255, 136, 0.3); /* Brillo del verde */
+    
+    /* --- COLORES DE TEXTO --- */
+    --text-main: #ffffff;       /* Blanco puro */
+    --text-secondary: #b3b3b3;  /* Gris suave para descripciones */
+    --text-dim: #666666;        /* Gris oscuro para detalles pequeños */
+
+    /* --- EFECTOS Y BORDES --- */
+    --border-color: rgba(255, 255, 255, 0.08);
+    --glass-bg: rgba(18, 18, 18, 0.7);
+    --shadow-pro: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    /* --- VELOCIDAD DE ANIMACIÓN --- */
+    --transition-fast: 0.2s ease;
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}

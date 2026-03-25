@@ -1,0 +1,151 @@
+/* Importar una fuente moderna y limpia */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d; /* Negro profundo */
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* --- NAVEGACIÓN PRO --- */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px); /* Efecto cristal */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00ff88; /* Verde neón tipo Minecraft/Hacker */
+    text-shadow: 0 0 10px #00ff88;
+}
+
+/* --- SECCIÓN HERO (BIENVENIDA) --- */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #0d0d0d 100%);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #fff, #00ff88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --- TARJETAS DE APK (DISEÑO AVANZADO) --- */
+.apk-list {
+    padding: 50px 5%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.apk-card {
+    background: #151515;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.apk-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 255, 136, 0.1);
+    border-color: #00ff88;
+}
+
+.apk-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.apk-info {
+    padding: 20px;
+}
+
+.apk-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.apk-info p {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+/* --- BOTONES MODERNOS --- */
+.apk-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-view, .btn-download {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-view {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.btn-download {
+    background: #00ff88;
+    color: #000;
+}
+
+.btn-download:hover {
+    background: #00cc6e;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+}
+
+/* --- BOTÓN DE GOOGLE (CONTENEDOR) --- */
+#buttonDiv {
+    transform: scale(0.9);
+}
+
+/* Diseño para móviles */
+@media (max-width: 768px) {
+    .hero-section h1 { font-size: 2rem; }
+    .main-nav { padding: 15px 5%; }
+}
+.logo span {
+    color: var(--main-color);
+    text-shadow: 0 0 15px var(--main-glow);
+}

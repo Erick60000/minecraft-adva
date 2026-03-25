@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Advanced | Elite Modding</title>
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="logo">MC<span>ADVANCED</span></div>
+        <div class="nav-auth">
+            <div id="buttonDiv"></div> 
+        </div>
+        <button class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <main id="app-content">
+        
+        <header class="hero-section">
+            <h1>Bienvenido a la Nueva Era</h1>
+            <p>Descarga APKs modificadas y herramientas 4D exclusivas.</p>
+        </header>
+
+        <section class="apk-list">
+            <h2 class="section-title">Versiones Disponibles</h2>
+            
+            <div class="grid-container" id="apk-grid">
+                <article class="apk-card">
+                    <div class="apk-badge">NUEVO</div>
+                    <img src="assets/mc-cover.jpg" alt="Minecraft v1.26" class="apk-img">
+                    <div class="apk-info">
+                        <h3>Minecraft v1.26.10</h3>
+                        <p>Optimización máxima de FPS y soporte 4D scripts.</p>
+                        <div class="apk-actions">
+                            <button class="btn-view" onclick="showDetails('v126')">Ver Detalles</button>
+                            <a href="#" class="btn-download">Descargar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="modal-details" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
