@@ -25,4 +25,4 @@ Si quieres probarlo localmente usando **Termux**:
 3. Abre el index en tu navegador.
 
 ---
-**Desarrollado por [ErickDev](https://github.com/Erick60000)** *Dominican Republic 🇩🇴 | 2026*
+**Desarrollado por [ErickDev](https://github.com/Erick60000)** *Dominican Republic 🛸| 2026*
